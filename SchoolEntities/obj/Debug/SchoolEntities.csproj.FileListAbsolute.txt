@@ -1,0 +1,11 @@
+D:\Brown Bags\EfDemo\SchoolEntities\obj\Debug\SchoolEntities.csprojResolveAssemblyReference.cache
+D:\Brown Bags\EfDemo\SchoolEntities\obj\Debug\SchoolEntities.csproj.CoreCompileInputs.cache
+D:\Brown Bags\EfDemo\SchoolEntities\bin\Debug\SchoolEntities.dll.config
+D:\Brown Bags\EfDemo\SchoolEntities\bin\Debug\SchoolEntities.dll
+D:\Brown Bags\EfDemo\SchoolEntities\bin\Debug\SchoolEntities.pdb
+D:\Brown Bags\EfDemo\SchoolEntities\bin\Debug\EntityFramework.dll
+D:\Brown Bags\EfDemo\SchoolEntities\bin\Debug\EntityFramework.SqlServer.dll
+D:\Brown Bags\EfDemo\SchoolEntities\bin\Debug\EntityFramework.xml
+D:\Brown Bags\EfDemo\SchoolEntities\bin\Debug\EntityFramework.SqlServer.xml
+D:\Brown Bags\EfDemo\SchoolEntities\obj\Debug\SchoolEntities.dll
+D:\Brown Bags\EfDemo\SchoolEntities\obj\Debug\SchoolEntities.pdb
