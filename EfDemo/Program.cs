@@ -10,23 +10,19 @@ namespace EfDemo
         static void Main(string[] args)
         {
             var queries = new Queries();
-            var schoolContext = new SchoolEntities.SchoolContext();
-
+          
             Database.SetInitializer<SchoolContext>(new SchoolInitializer());
 
-            using (schoolContext)
-            {
-                var schools = schoolContext.Students.ToList();
+            //queries.EntityLifeCycle();
+            //queries.FirstLevelCache);
+            //queries.NPlus1Problem();          
+            //queries.SlowBulkInserts();
+            queries.FastBulkInserts();
+            //queries.GreedyRowQuery();
+            //queries.GreedyColumnQuery();
+            //queries.StoredProcedure();
 
-                foreach (var item in schools)
-                {
-                    Console.WriteLine(item.FirstName, item.LastName);
-                }
-            }
-
-            queries.LazyLoading();
-            queries.GreedyRowQuery();
-            queries.GreedyColumnQuery();
+            Console.WriteLine();
         }
     }
 }

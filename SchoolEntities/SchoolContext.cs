@@ -17,7 +17,10 @@ namespace SchoolEntities
 
         public DbSet<Student> Students { get; set; }
         public DbSet<StudentAddress> StudentAddresses { get; set; }
-       
+
+        public DbSet<Course> Courses { get; set; }
+        public DbSet<Department> Departments { get; set; }
+
         public DbSet<Grade> Grades { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

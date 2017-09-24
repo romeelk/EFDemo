@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SchoolEntities
 {
-    public class SchoolInitializer : System.Data.Entity.DropCreateDatabaseAlways<SchoolContext>
+    public class SchoolInitializer : System.Data.Entity.CreateDatabaseIfNotExists<SchoolContext>
     {
         protected override void Seed(SchoolContext context)
         {
@@ -40,8 +40,32 @@ namespace SchoolEntities
 
             students.ForEach(s => context.Students.Add(s));
 
+
+            var departments = new List<Department>
+            {
+                new Department{Administrator="Dr Jones",Title ="Engineering"},
+                new Department{Administrator="Dr Jones",Title ="English"},
+                new Department{Administrator="Dr Jones",Title ="Economics"}
+            };
+
+            departments.ForEach(d => context.Departments.Add(d));
             context.SaveChanges();
-          
+
+
+            var courses = new List<Course>
+            {
+                new Course{Name="Calculus",Duration=6, Location = "Main campus",DepartmentId =1},
+                new Course{Name="Chemistry",Duration=6, Location = "Main campus", DepartmentId = 1},
+                new Course{Name="Physics",Duration=6, Location = "Main campus", DepartmentId = 1},
+                new Course{Name="Poetry",Duration=6, Location = "Main campus", DepartmentId = 2},
+                new Course{Name="Literature",Duration=6, Location = "Main campus", DepartmentId = 2},
+                new Course{Name="Macroeconomics",Duration=6, Location = "Main campus", DepartmentId = 3}, 
+                new Course{Name="Microeconomics",Duration=6, Location = "Main campus", DepartmentId = 3},
+            };
+
+            courses.ForEach(s => context.Courses.Add(s));
+
+            context.SaveChanges();
 
         }
     }
